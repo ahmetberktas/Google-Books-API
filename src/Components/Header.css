@@ -1,0 +1,69 @@
+.header-container {
+    position: relative;
+    height: 300px;
+    background: #333;
+    overflow: hidden;
+  }
+  
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://www.messageconcept.com/wp-content/uploads/bb-plugin/cache/messageconcept-cloud-solutions-row_center-1520x300.jpg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    opacity: 0.6;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .header-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  
+  .header-input {
+    padding: 8px;
+    font-size: 18px;
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .header-button {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .card-container{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 1500px) {
+    .header-background {
+      background-size: cover;
+    }
+  }
+  
